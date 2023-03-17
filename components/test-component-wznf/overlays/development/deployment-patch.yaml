@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-wznf
+  namespace: build-e2e-vdzg-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:358dc590a072b903451ba8361fe80222ded89ad6682393f96eba2c24bd7ee519
+        name: my-python
+        resources: {}
+status: {}
